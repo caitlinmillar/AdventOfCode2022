@@ -11,7 +11,6 @@ public class Day1 {
     }
 
     private static int sumTop3(List<Integer> elves){
-//        ArrayList<Integer> elves = new ArrayList<>();
         int[] calorie = new int[]{0};
         return elves.stream().takeWhile(integer -> ++calorie[0] < 3).mapToInt(Integer::intValue).sum();
     }
